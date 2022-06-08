@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box {
+    /* width: 100%;
+    text-align: center;
+    margin: 1.5em;
+    padding: 1em; */
+}
+
+.one {
+    border: 2px solid red;
+}
+
+.two {
+    border: 2px solid blue;
+}
+
+.three {
+    border: 2px solid green;
+}
+
+.four {
+    border: 2px solid yellow;
+}
