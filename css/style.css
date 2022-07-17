@@ -53,7 +53,7 @@ ul {
     list-style-type: none;
 }
 
-a {
+.link {
     text-decoration: none;
     color: #f9f9f9;
 }
@@ -69,7 +69,7 @@ h3 {
     font-weight: 500;
 }
 
-p {
+.text {
     margin: 16px 0;
     line-height: 1.75;
     font-weight: 400;
@@ -79,6 +79,7 @@ img {
     max-width: 100%;
     height: auto;
     margin-top: 16px;
+    border-radius: 15px;
 }
 
 main {
@@ -160,12 +161,24 @@ footer {
     padding: 32px;
 }
 
+.blog-post a:hover {
+    color: blue;
+}
+
 .footer {
-    margin: 2em 0 2em 0;
+    background-color: #f6f6f6;
+    display: block;
+    padding: 2em 0 2em 0;
     text-align: center;
 }
 
 .footer a {
     text-decoration: none;
-    color: #888888;
+    color: #505050;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

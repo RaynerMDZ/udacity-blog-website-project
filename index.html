@@ -6,56 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayner's Blog</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="header">
-      <a href="#" class="logo"><img src="assets/img/free-logo-841x0npbi1-ax645pvf0g.jpg" alt="Rayner's Blog logo"></a>
+      <a href="index.html" class="logo"><img src="images/free-logo-841x0npbi1-ax645pvf0g.jpg" alt="Rayner's Blog logo"></a>
     <nav>
         <ul class="nav">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
   </header>
 
   <div class="container">
       <main>
+
           <div class="blog-post">
               <div class="meta">
-                  <h1>DESERT</h1>
-                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                  <small>By <a href="#">Admin</a> on Sept 2,2021</small>
+                  <a href="java-image-uploader-page.html" class="link"><h1>Java Image Uploader V2 — Server, Azure, Database.</h1></a>
+                  <h3>Because the V1 was having some implementation issues, I decided to create a new version of the old one. This version has Dependency Injection, an organized structure, 3 ways to upload the picture, and a view for testing purposes.</h3>
+                  <small>By Rayner Mendez on May 12,2022</small>
               </div>
               <div class="post">
-                  <img src="assets/img/desert.jpg" alt="">
-                  <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam. <a href="">...</a></p>
+                  <img src="images/1_vFiGOTV1S8yz0RTIQteTjw.png" alt="">
+                  <p class="post-detail text">The purpose of this publication is not to explain detailed how this works. It is just to give you a brief introduction to this project. In order to see it working, you will have to download it from Github and run it on your own computer...</p>
+                  <a href="java-image-uploader-page.html" class="link"><p>Learn more...</p></a>
               </div>
           </div>
 
           <div class="blog-post">
               <div class="meta">
-                  <h1>SEA BEACH</h1>
-                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                  <small>By <a href="#">Admin</a> on Sept 2,2021</small>
+                  <a href="handy-java-multipart-file-uploader-page.html" class="link"><h1>Handy Java Multipart File Uploader</h1></a>
+                  <h3>Aren’t you tired of dealing with files and streams when you need to upload Multipart File??? Because I am extremely tired of it 😡. Let me introduce a solution to this problem. Yaayyy 😃</h3>
+                  <small>By Rayner Mendez on May 12,2022</small>
               </div>
               <div class="post">
-                  <img src="assets/img/sea.jpg" alt="">
-                  <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam.  <a href="">...</a></p>
-              </div>
-          </div>
-
-          <div class="blog-post">
-              <div class="meta">
-                  <h1>MOUNTAIN</h1>
-                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                  <small>By <a href="#">Admin</a> on Sept 2,2021</small>
-              </div>
-              <div class="post">
-                  <img src="assets/img/mountain.jpg" alt="">
-                  <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ea placeat temporibus aliquid nemo, quas enim provident atque veritatis, exercitationem sunt esse necessitatibus animi, dicta dignissimos molestias accusamus beatae numquam.  <a href="">...</a></p>
+                  <img src="images/1_KBM9kd-Rcdn6rG07H9r9Zw.jpeg" alt="">
+                  <p class="post-detail text">I developed this idea because I was searching for a way to change the name of a Multipart File in Java. Sadly, there was not much information about the topic. However, I was thinking of a way to solve this problem and the idea of creating a util class came up...</p>
+                  <a href="handy-java-multipart-file-uploader-page.html" class="link"><p>Learn more...</p></a>
               </div>
           </div>
 
@@ -64,7 +55,12 @@
 
   <footer class="footer">
       <p>Created by Rayner Mendez | 2022</p>
-      <a href="www.github.com/raynermdz">GitHub</a>
+      <br>
+      <p class="social">
+          <a href="https://github.com/RaynerMDZ" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/raynermendez/">LinkedIn</a>
+          <a href="https://medium.com/@raynermdz">Medium</a>
+      </p>
   </footer>
     
 </body>
