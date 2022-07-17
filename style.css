@@ -1,28 +1,28 @@
-.container {
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.hero {
+	min-height: 50vh;
+	display: grid;
+	justify-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.main-content {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.box {
-    /* width: 100%;
-    text-align: center;
-    margin: 1.5em;
-    padding: 1em; */
-}
-
-.one {
-    border: 2px solid red;
-}
-
-.two {
-    border: 2px solid blue;
-}
-
-.three {
-    border: 2px solid green;
-}
-
-.four {
-    border: 2px solid yellow;
+    justify-content: space-between;
+    padding: 0 5vw 0 5vw;
 }
