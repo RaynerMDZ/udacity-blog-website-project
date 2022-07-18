@@ -28,8 +28,10 @@
             <small>By Rayner Mendez on May 12, 2022</small>
         </div>
 
-        <p>Aren’t you tired of dealing with files and streams when you need to upload Multipart File??? Because
-            I am extremely tired of it 😡. Let me introduce a solution to this problem. Yaayyy 😃</p>
+        <blockquote cite="https://medium.com/@raynermdz/handy-java-multipart-file-uploader-3ab065aee43a">
+            <p>Aren’t you tired of dealing with files and streams when you need to upload Multipart File??? Because
+                <strong>I am exhausted of it</strong> 😡. Let me introduce a solution to this problem. Yaayyy 😃</p>
+        </blockquote>
 
         <p>I developed this idea because I was searching for a way to change the name of a Multipart File in Java.
             Sadly, there was not much information about the topic. However, I was thinking of a way to solve this
@@ -41,29 +43,29 @@
         <img src="images/handy-java-multipart-file-uploader-images/1.png" alt="Picture 1">
 
         <p>This method takes care of calling the other methods in the class to upload the file.
-            It takes a directory as a string, a MultipartFile, and a name as a string. Then, this method
-            calls another method called fileSaver() that requires the directory, MultipartFile, and the name.
-            FileSaver() returns the saved file. Also, This same method calls another method called fileNameChanger()
-            (I am not good at naming methods and variables 😆) which requires the MultipartFile and the File
-            returned by the method fileSaver(). The method only returns True if the file is renamed. Otherwise,
+            It takes a directory as a string, a <em>MultipartFile</em>, and a name as a string. Then, this method
+            calls another method called <em>fileSaver()</em> that requires the directory, <em>MultipartFile</em>, and the name.
+            <em>FileSaver()</em> returns the saved file. Also, This same method calls another method called <em>fileNameChanger()</em>
+            <u>(I am not good at naming methods and variables 😆)</u> which requires the <em>MultipartFile</em> and the File
+            returned by the method <em>fileSaver()</em>. The method only returns True if the file is renamed. Otherwise,
             it returns False.</p>
 
         <img src="images/handy-java-multipart-file-uploader-images/2.png" alt="Picture 2">
 
         <img src="images/handy-java-multipart-file-uploader-images/3.png" alt="Picture 3">
 
-        <p>There is a method that is extremely important in this whole process, without it this couldn’t
+        <p>There is a method that is extremely important in this whole process, without it this could not
             be possible whatsoever. That method is called:</p>
 
         <img src="images/handy-java-multipart-file-uploader-images/4.png" alt="Picture 4">
 
-        <p>As you can see, This method all it does is get the extension file of the Multipart File.
+        <p>As you can see, This method all it does is get the extension file of the <em>MultipartFile</em>.
             You may ask, why is this?. There is a simple answer for that, you need the extension of the
-            Multipart File before you can create a new file. This is because all we are doing here is creating an
-            empty File with the same extension as the Multipart File provided in the method pictureUploader().</p>
+            <em>MultipartFile</em> before you can create a new file. This is because all we are doing here is creating an
+            empty File with the same extension as the <em>MultipartFile</em> provided in the method <em>pictureUploader()</em>.</p>
 
         <p>After you create the empty file with the corresponding extension, you have to pass the data from
-            the Multipart File to the new Empty File.</p>
+            the <em>MultipartFile</em> to the new Empty File.</p>
 
         <img src="images/handy-java-multipart-file-uploader-images/5.png" alt="Picture 5">
 
@@ -74,7 +76,7 @@
 
         <p>Simply because programming is fun 😆.</p>
 
-        <p>Lastly, there is a method that I called “The bonus method”. This method all it does is generating a
+        <p>Lastly, there is a method that I called <u>“The bonus method”</u>. This method all it does is generating a
             random string which you can use as the name of the file that you want to upload.</p>
 
         <img src="images/handy-java-multipart-file-uploader-images/6.png" alt="Picture 6">
