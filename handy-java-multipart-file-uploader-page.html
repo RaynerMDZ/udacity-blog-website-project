@@ -22,10 +22,64 @@
         </nav>
     </header>
 
-    <div class="post-container">
-        <p>Aren’t you tired of dealing with files and streams when you need to upload Multipart File??? Because I am extremely tired of it 😡. Let me introduce a solution to this problem. Yaayyy 😃</p>
-        <p>I developed this idea because I was searching for a way to change the name of a Multipart File in Java. Sadly, there was not much information about the topic. However, I was thinking of a way to solve this problem and the idea of creating a util class came up.</p>
-        <p>With this class, you can upload, change the name of the file, and as a bonus you can generate a random name for the file in your Java application.</p>
+    <div class="handy-java-multipart-container">
+        <div>
+            <h1>Handy Java Multipart File Uploader</h1>
+            <small>By Rayner Mendez on May 12, 2022</small>
+        </div>
+
+        <p>Aren’t you tired of dealing with files and streams when you need to upload Multipart File??? Because
+            I am extremely tired of it 😡. Let me introduce a solution to this problem. Yaayyy 😃</p>
+
+        <p>I developed this idea because I was searching for a way to change the name of a Multipart File in Java.
+            Sadly, there was not much information about the topic. However, I was thinking of a way to solve this
+            problem and the idea of creating a util class came up.</p>
+
+        <p>With this class, you can upload, change the name of the file, and as a bonus you can generate a random name
+            for the file in your Java application.</p>
+
+        <img src="images/handy-java-multipart-file-uploader-images/1.png" alt="Picture 1">
+
+        <p>This method takes care of calling the other methods in the class to upload the file.
+            It takes a directory as a string, a MultipartFile, and a name as a string. Then, this method
+            calls another method called fileSaver() that requires the directory, MultipartFile, and the name.
+            FileSaver() returns the saved file. Also, This same method calls another method called fileNameChanger()
+            (I am not good at naming methods and variables 😆) which requires the MultipartFile and the File
+            returned by the method fileSaver(). The method only returns True if the file is renamed. Otherwise,
+            it returns False.</p>
+
+        <img src="images/handy-java-multipart-file-uploader-images/2.png" alt="Picture 2">
+
+        <img src="images/handy-java-multipart-file-uploader-images/3.png" alt="Picture 3">
+
+        <p>There is a method that is extremely important in this whole process, without it this couldn’t
+            be possible whatsoever. That method is called:</p>
+
+        <img src="images/handy-java-multipart-file-uploader-images/4.png" alt="Picture 4">
+
+        <p>As you can see, This method all it does is get the extension file of the Multipart File.
+            You may ask, why is this?. There is a simple answer for that, you need the extension of the
+            Multipart File before you can create a new file. This is because all we are doing here is creating an
+            empty File with the same extension as the Multipart File provided in the method pictureUploader().</p>
+
+        <p>After you create the empty file with the corresponding extension, you have to pass the data from
+            the Multipart File to the new Empty File.</p>
+
+        <img src="images/handy-java-multipart-file-uploader-images/5.png" alt="Picture 5">
+
+        <p>This does the same thing as the method above, but with the condition that this time it
+            uses a regex to perform the action.</p>
+
+        <p>Why would I do that?</p>
+
+        <p>Simply because programming is fun 😆.</p>
+
+        <p>Lastly, there is a method that I called “The bonus method”. This method all it does is generating a
+            random string which you can use as the name of the file that you want to upload.</p>
+
+        <img src="images/handy-java-multipart-file-uploader-images/6.png" alt="Picture 6">
+
+        <p>Check the <a href="https://github.com/RaynerMDZ/Java-FileSaver-and-Renamer">GitHub repo here.</a></p>
     </div>
 
     <footer class="footer">

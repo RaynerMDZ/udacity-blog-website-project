@@ -22,7 +22,79 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div class="java-image-uploader-container">
+        <div>
+            <h1>Java Image Uploader V2 — Server, Azure, Database</h1>
+            <small>By Rayner Mendez on May 12, 2022</small>
+        </div>
+
+        <p>Because the V1 was having some implementation issues, I decided to create a new version of the old one.
+            This version has Dependency Injection, an organized structure, 3 ways to upload the picture,
+            and a view for testing purposes.</p>
+
+        <p>This project was made with Java 8, HTML5, CSS3, Bootstrap 4, Spring Boot 2, Spring Framework 5,
+            H2-database, JPA/Hibernate, Thymeleaf, and Azure.</p>
+
+        <p>The purpose of this publication is not to explain detailed how this works. It is just to give you a
+            brief introduction to this project. In order to see it working, you will have to download it from
+            GitHub and run it on your own computer.</p>
+
+        <p><strong>SPOILER:</strong> this is going to be really fun.</p>
+
+        <p>Let’s get started…</p>
+
+        <p>In this IndexController we have the root of the web app. This method only displays all the pictures
+            registered in the database. Very simple stuff.</p>
+
+        <img src="images/java-image-uploader-images/1.png" alt="Picture 1">
+
+        <p>Here we have the PictureController. This controller handles every request from the client such as
+            saving a picture, updating a picture, deleting a picture, and retrieving a picture by its id.</p>
+
+        <img src="images/java-image-uploader-images/2.png" alt="Picture 2">
+
+        <p>This is our model that holds data of the picture. We are going to use Project Lombok to get
+            things done faster. Make sure you install Project Lombok on your IDE. With the @Data annotation,
+            Project Lombok automatically generates an empty constructor, a constructor with every field,
+            getters and setters, equals and hashcode, and toString(). I think I am missing something 😝</p>
+
+        <img src="images/java-image-uploader-images/3.png" alt="Picture 3">
+
+        <p>The magic starts here. I have created a factory with the implementations of PictureService.
+            In the frontend, you get to choose where you want to store your picture.</p>
+
+        <img src="images/java-image-uploader-images/4.png" alt="Picture 4">
+
+        <img src="images/java-image-uploader-images/5.png" alt="Picture 5">
+
+        <p>Your choices are to the Server, to a Cloud Storage like Azure (Blob storage used in this example),
+            and to the Database.</p>
+
+        <img src="images/java-image-uploader-images/6.png" alt="Picture 6">
+
+        <p>This is how the image is saved to the server. Basically a new file is created with the
+            bytes of the multipart file.</p>
+
+        <img src="images/java-image-uploader-images/7.png" alt="Picture 7">
+
+        <p>s image below is how the multipart file gets uploaded to the storage.</p>
+
+        <img src="images/java-image-uploader-images/8.png" alt="Picture 8">
+
+        <img src="images/java-image-uploader-images/9.png" alt="Picture 9">
+
+        <img src="images/java-image-uploader-images/10.png" alt="Picture 10">
+
+        <p>In this case, I am using the Azure credentials from a .properties file specified by
+            @ProperySource(“classpath:azure.properties.”)</p>
+
+        <p>The @Value annotation takes the content in the field specified inside the annotation.
+            We see that @Value(“${azure.storageConnectionString}”) matches the one in the azure.properties file.</p>
+
+        <p>I know this is not all, but this project has too much information to be cover in just one post.
+            I invite you all to check <a href="https://github.com/RaynerMDZ/Java-Image-Uploader-V2">the GitHub repo.</a></p>
+
+        <p>Feel free to fork and contribute to this project.</p>
 
     </div>
 
