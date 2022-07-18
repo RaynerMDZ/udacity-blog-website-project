@@ -1,0 +1,8 @@
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin: 1rem auto;
+    height: 73vh;
+    align-items: center;
+}

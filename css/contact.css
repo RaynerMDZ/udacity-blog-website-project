@@ -1,0 +1,30 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: 1rem auto;
+    height: 73vh;
+    align-items: center;
+}
+
+h1 {
+    color: #2a2a2a;
+}
+
+.social-list {
+    text-align: center;
+}
+
+.social-list li {
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.social-list a {
+    text-decoration: none;
+    color: #2a2a2a;
+}
+
+.social-list a:hover {
+    color: #888888;
+}

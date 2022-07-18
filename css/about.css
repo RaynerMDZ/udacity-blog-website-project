@@ -1,0 +1,16 @@
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr);
+    width: 70%;
+    margin: 1rem auto;
+    height: 73vh;
+    align-items: center;
+}
+
+.avatar {
+    box-shadow: 5px 5px 8px #888888;;
+}
+
+.summary {
+    font-size: 1.3rem;
+}
